@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import CountUp from 'react-countup';
 
 const APropos = () => {
   return (
@@ -46,20 +49,24 @@ const APropos = () => {
         <div className="container grid place-items-center grid-cols-1 lg:flex justify-between gap-y-16 lg:my-0 pb-24 text-white p-10">
           <div className="flex">
             <div className="text-7xl font-bold text-border border-orange-400">
-              +12
+              +<CountUp start={0} end={12} delay={5} />
             </div>
             <div className="text-xl text-thin">
               années <br /> d'expérience
             </div>
           </div>
           <div className="flex">
-            <div className="text-7xl font-bold">+200</div>
+            <div className="text-7xl font-bold">
+              +<CountUp start={0} end={200} delay={5} />
+            </div>
             <div className="text-xl text-thin">
               villas <br /> construites
             </div>
           </div>
           <div className="flex">
-            <div className="text-7xl font-bold">+600</div>
+            <div className="text-7xl font-bold">
+              +<CountUp start={0} end={600} delay={5} />
+            </div>
             <div className="text-xl text-thin">
               clients <br /> satisfaits
             </div>
