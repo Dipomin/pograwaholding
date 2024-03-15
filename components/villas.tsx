@@ -56,10 +56,10 @@ const Villas = () => {
   ];
 
   return (
-    <div className="bg-orange-600 w-full place-items-center pt-16 pb-10">
-      <div className="p-16 pb-24">
+    <div className="bg-orange-600 w-full place-items-center lg:pt-16 pb-10">
+      <div className="lg:p-16 pb-10 lg:pb-24">
         <div className="flex flex-col">
-          <div className="text-center text-6xl text-white font-extrabold">
+          <div className="text-center text-3xl lg:text-6xl text-white font-extrabold pt-10">
             L'immobilier, c'est notre passion
           </div>
 
@@ -80,17 +80,17 @@ const Villas = () => {
             </div>
           </div>
         </div>
-        <div className="text-5xl font-medium text-center text-white pt-20">
+        <div className="text-3xl lg:text-5xl font-normal text-center uppercase lg:text-white pt-8 lg:pt-20 text-blue-900">
          Découvrez nos projets immobiliers
         </div>
-        <div className="text-3xl font-thin text-center text-white pt-10">
+        <div className="text-xl lg:text-3xl font-thin text-center text-white pt-10">
           Pograwa Holding dispose de plusieurs villa moyens standing et haut standing, des villas basses et des villas duplex. Faites votre choix puis contactez-nous.
         </div>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="lg:grid lg:grid-cols-2">
       {villasList.map((villa) => (
-        <div key={villa.id} className="w-full p-2 flex">
-          <div className="w-[200px]">
+        <div key={villa.id} className="w-full p-2 grid grid-cols-1 lg:flex">
+          <div className="lg:w-[200px]">
             <Image
               src={villa.pict}
               width={200}

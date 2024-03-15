@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import HeaderMobile from "@/components/HeaderMobile";
 
 const formSchema = z.object({
   nom: z
@@ -68,16 +69,21 @@ const Contacts = () => {
 
   return (
     <div>
-      <PageMenu />
+      <div className='hidden lg:block'>
+            <PageMenu />
+        </div>
+        <div className='lg:hidden block'>
+            <HeaderMobile />
+        </div>  
       <HeaderPage
         titlePage="Contacts"
         headerPageImage="/contact-us.png"
         titleDesc="N'hésitez pas à nous contacter pour toutes informations complémentaires."
       />
-      <div className="container p-5 text-center text-xl">
+      <div className="container lg:p-5 text-center text-xl">
         Veuillez remplir le formulaire ci-dessous :
       </div>
-      <div className="container pt-10">
+      <div className="lg:container p-3 lg:pt-10">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField

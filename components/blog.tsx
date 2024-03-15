@@ -31,11 +31,11 @@ const Blog = () => {
   return (
     <section className="pb-24">
       <h2 className="text-4xl font-bold text-center my-16">Blog</h2>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-1 place-items-center lg:flex justify-center">
         {blogArticle.map((article) => (
           <div
             key={article.idArticle}
-            className="w-[300px] border-2 border-blue-800 mx-4 hover:underline"
+            className="w-[300px] border-2 border-blue-800 lg:mx-4 my-4 hover:underline"
           >
             <Link href={article.articleLink}>
               <div>

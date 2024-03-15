@@ -1,14 +1,16 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const expertises = [
   {
     id: "0",
     iconExpert: "/btp-icon.png",
-    expertiseTitle: "Bureau de Travaux Public",
+    expertiseTitle: "Promotion immobilière",
     descTitle:
       "Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner.",
+    btnLink: "/expertises/promoteur-immobilier"
   },
   {
     id: "0",
@@ -16,12 +18,14 @@ const expertises = [
     expertiseTitle: "Technologie",
     descTitle:
       "Bénéficiez de notre expertise pour une installation et une maintenance de qualité.",
+    btnLink: "/expertises/technologie"
   },
   {
     id: "0",
     iconExpert: "/industry-icon.png",
     expertiseTitle: "Industrie extractive",
     descTitle: "Nous sommes engagés à minimiser notre impact environnemental.",
+    btnLink: "/expertises/industrie-extractive"
   },
 ];
 
@@ -35,9 +39,12 @@ const ExpertisesHome = () => {
         <div className="text-center my-10 text-2xl font-medium">
           Votre bonheur commence chez vous, trouvez votre bonheur avec nous
         </div>
-        <div className="flex justify-center w-full bg-blue-900 p-16">
+        <div className="grid grid-cols-1 lg:flex justify-center w-full bg-blue-900 space-y-8 lg:space-y-0  lg:my-0 lg:p-16">
           {expertises.map((expertise) => (
-            <div className="container flex flex-col w-80">
+            <div key={expertise.id} className="container flex flex-col w-96 pt-16 hover:bg-orange-400">
+              <div className="uppercase text-center font-bold text-orange-400 hover:text-white text-2xl">
+                {expertise.expertiseTitle}
+              </div>
               <div className="flex justify-center">
                 <Image
                   src={expertise.iconExpert}
@@ -46,11 +53,13 @@ const ExpertisesHome = () => {
                   alt="Pograwa Holding"
                 />
               </div>
-              <div className="text-white text-xl font-thin text-center line-clamp-3">
+              <div className="text-white text-xl font-thin text-center hover:text-bold line-clamp-2">
                 {expertise.descTitle}
               </div>
               <div className="flex justify-center p-6">
-                <Button size={"lg"} variant={"orange"}>En savoir plus {"->"}</Button>
+                <Link href={expertise.btnLink}>
+                  <Button size={"lg"} variant={"orange"}>En savoir plus {"->"}</Button>
+                </Link>
               </div>
             </div>
           ))}

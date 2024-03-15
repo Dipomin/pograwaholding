@@ -51,7 +51,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="container w-full items-center pb-24">
+    <div className="lg:container w-full items-center lg:pb-24">
       <div className="relative z-10">
         <Carousel
           plugins={[plugin.current]}
@@ -72,7 +72,6 @@ const Hero = () => {
                       alt="Pograwa Holding"
                       className=" items-stretch"
                     />
-                  
                   
                 </div>
               </CarouselItem>

@@ -1,3 +1,4 @@
+import HeaderMobile from '@/components/HeaderMobile'
 import Footer from '@/components/footer'
 import HeaderPage from '@/components/header-page'
 import PageMenu from '@/components/page-menu'
@@ -6,14 +7,19 @@ import React from 'react'
 const IndustrieExtractive = () => {
   return (
     <div>
-        <PageMenu />
+        <div className='hidden lg:block'>
+            <PageMenu />
+        </div>
+        <div className='lg:hidden block'>
+            <HeaderMobile />
+        </div>
         <div>
             <HeaderPage 
                 titlePage="Excellence dans l'Indusrie Extractive" 
                 headerPageImage="/32699.jpg"
                 titleDesc="Pograwa Holding met son expertise au service de la valorisation responsable des ressources naturelles, contribuant ainsi au développement économique tout en respectant l'environnement et les communautés locales." />
         </div>
-        <section className='container p-10 text-xl font-light leading-10'>
+        <section className='lg:container p-4 my-10 lg:p-10 text-base lg:text-xl font-light lg:leading-10'>
             <div>
                 Au-delà de son succès en tant que promoteur immobilier d'exception, Pograwa Holding s'impose également comme un acteur majeur dans l'industrie extractive, un domaine stratégique qui consolide sa position en tant que groupe diversifié et prospère. L'industrie minière, secteur économique essentiel, regroupe des activités allant de la prospection à l'exploitation de mines, et Pograwa Holding s'y distingue par son engagement dans l'extraction d'or.
             </div>
@@ -56,7 +62,7 @@ const IndustrieExtractive = () => {
                 <p className='p-4'>
                     Choisir Pograwa Holding dans l'industrie extractive, c'est opter pour une entreprise ancrée dans l'excellence, la durabilité et l'éthique. Nous mettons notre expertise au service de la valorisation responsable des ressources naturelles, contribuant ainsi au développement économique tout en respectant l'environnement et les communautés locales.
                 </p>
-                <p>
+                <p className='p-4'>
                     Que ce soit dans l'immobilier ou l'industrie extractive, Pograwa Holding se distingue par son engagement envers l'excellence et son souci constant de créer un impact positif à long terme. Rejoignez-nous dans cette aventure où la prospérité s'allie à la responsabilité chez Pograwa Holding.
                 </p>
             </div>

@@ -37,7 +37,7 @@ const Menu = () => {
       ];
       
   return (
-    <div>
+    <div className='hidden lg:block lg:w-full'>
         <div className="grid place-items-center grid-cols-1 p-8 rounded-lg top-0">
           <div className="flex justify-center gap-x-4 uppercase bg-orange-600 w-full text-white text-xl font-medium top-0 fixed">
             <div className='flex my-3'>

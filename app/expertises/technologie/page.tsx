@@ -1,3 +1,4 @@
+import HeaderMobile from "@/components/HeaderMobile";
 import Footer from "@/components/footer";
 import HeaderPage from "@/components/header-page";
 import PageMenu from "@/components/page-menu";
@@ -6,16 +7,21 @@ import React from "react";
 const Technologie = () => {
   return (
     <div>
-      <PageMenu />
-      <div>
-        <HeaderPage
-          titlePage="Technlogie"
-          headerPageImage="/10723.jpg"
-          titleDesc="Élégance et Innovation dans la Commercialisation et Maintenance d'Ascenseurs"
-        />
+        <div className='hidden lg:block'>
+            <PageMenu />
+        </div>
+        <div className='lg:hidden block'>
+            <HeaderMobile />
+        </div>      
+        <div>
+          <HeaderPage
+            titlePage="Technologie"
+            headerPageImage="/10723.jpg"
+            titleDesc="Élégance et Innovation dans la Commercialisation et Maintenance d'Ascenseurs"
+          />
       </div>
 
-      <section className="container p-10 text-xl font-light leading-10">
+      <section className='lg:container p-4 my-10 lg:p-10 text-base lg:text-xl font-light lg:leading-10'>
         <div>
           Au-delà de son succès dans le secteur immobilier et de l'industrie
           extractive, Pograwa Holding, à travers sa filiale SAITX, se positionne

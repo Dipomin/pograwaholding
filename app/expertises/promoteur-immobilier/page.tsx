@@ -3,16 +3,22 @@ import HeaderPage from '@/components/header-page'
 import PageMenu from '@/components/page-menu'
 import React from 'react'
 import Image from 'next/image'
+import HeaderMobile from '@/components/HeaderMobile'
 
 const PromoteurImmobilier = () => {
   return (
     <div>
-        <PageMenu />
+        <div className='hidden lg:block'>
+            <PageMenu />
+        </div>
+        <div className='lg:hidden block'>
+            <HeaderMobile />
+        </div>
         <div>
             <HeaderPage titlePage='Promotion Immobilière' headerPageImage='/promotion-immobiliere-VILLA-DUPLEX-NANCY-1.jpeg' titleDesc='POGRAWA HOLDING se distingue par son expertise dans le domaine de la construction et de la promotion immobilière.' />
         </div>
-        <section className='container p-10 text-xl font-light leading-10'>
-            <div className='p-4'>
+        <section className='lg:container p-4 my-10 lg:p-10 text-base lg:text-xl font-light lg:leading-10'>
+            <div className='p-2 lg:p-4'>
             POGRAWA HOLDING, en tant que promoteur immobilier d'exception, incarne l'excellence dans la conception et la réalisation de projets immobiliers de standing. Forte de son fondateur visionnaire, Moumouni Pograwa, entrepreneur à succès à la tête du groupe PROCRAWA, POGRAWA HOLDING se distingue par son expertise dans le domaine de la construction et de la promotion immobilière.
             </div>
             <div>
