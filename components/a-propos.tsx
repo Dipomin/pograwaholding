@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
+import { redirect, useRouter } from "next/navigation";
 
 const APropos = () => {
+  const route = useRouter();
+
   return (
     <section className='bg-[url("/bg-mot.jpg")]'>
       <div className="container pb-24">
@@ -26,16 +31,23 @@ const APropos = () => {
           </div>
           <div className="w-[700px]">
             <div className="text-2xl font-thin pb-8 leading-10">
-              Pograwa Holding, société anonyme de droit ivoirien, se distingue
-              par sa diversification et son leadership dans plusieurs secteurs
-              clés de l'économie. Dirigée par M. Pograwa Moumouni, PDG dynamique
-              et visionnaire, la holding regroupe quatre entités distinctes : 1.
-              AGINEC GROUPE: Spécialisée dans l'immobilier et la construction,
-              AGINEC GROUPE est à l'origine de réalisations remarquables, telles
-              que la Cité haut de gamme de Bassam, un projet immobilier
-              d'envergure.
+              Dans l'objectif d'efficacité et de compétitivité, toute entreprise
+              fait face à de nombreux défis à relever pour la satisfaction de sa
+              clientèle et surtout faire partir des compagnies qui comptent dans
+              la politique publique du gouvernement en matière de croissance. Vu
+              l'importance du secteur privé dans cette politique, nos
+              entreprises AGINEC GROUPE SA, SAITX TECHNOLOGIES ET BIM.C ont été
+              regroupé en holding pour devenir POGRAWA HOLDING. Les secteurs de
+              l'immobilier, des nouvelles technologies, des mines et des
+              énergies renouvelables sont nos domaines de compétences.
             </div>
-            <Button variant={"orange"} size={"lg"}>Lire la suite</Button>
+            <Button
+              variant={"orange"}
+              size={"lg"}
+              onClick={() => route.push("/qui-sommes-nous/presentation")}
+            >
+              Lire la suite
+            </Button>
           </div>
         </div>
       </div>
