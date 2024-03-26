@@ -36,7 +36,7 @@ const Villas = () => {
         "1 Cuisine moderne, 1 Salle à manger, 2 Terrasses avant et arrière, 1 balcon, 1 garage",
       pict: "/villa-orgey-jackson.png",
       prix: "130.000.000 FCFA",
-      link: "/villa-duplex-haut-standing-orgey-jackson",
+      link: "/expertises/promoteur-immobilier/baie-milliadaire",
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Villas = () => {
       autres: "1 Cuisine moderne, 1 Salle à manger",
       pict: "/villa-cite-ivoire.png",
       prix: "18.600.000 FCFA",
-      link: "/expertises/promoteur-immobilier/cite-ivoire3/villa-duplex-moyen-standing-cite-ivoire",
+      link: "/expertises/promoteur-immobilier/cite-ivoire/",
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ const Villas = () => {
       autres: "1 Cuisine moderne, 1 Salle à manger,",
       pict: "/villa-cite-ivoire.png",
       prix: "24.600.000 FCFA",
-      link: "/expertises/promoteur-immobilier/cite-ivoire4/villa-duplex-moyen-standing-nancy",
+      link: "/expertises/promoteur-immobilier/cite-ivoire/",
     },
     {
       id: 3,
