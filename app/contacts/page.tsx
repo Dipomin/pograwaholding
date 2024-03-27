@@ -21,6 +21,14 @@ import { toast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import HeaderMobile from "@/components/HeaderMobile";
+import axios from "axios";
+
+interface TemplateEmailProps {
+  nom: string;
+  prenoms: string;
+  email: string;
+  message: string;
+}
 
 const formSchema = z.object({
   nom: z
@@ -57,8 +65,19 @@ const Contacts = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    console.log(data);
+
+    axios
+      .post("/api/send", {
+        data,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
     toast({
       variant: "destructive",
@@ -69,12 +88,12 @@ const Contacts = () => {
 
   return (
     <div>
-      <div className='hidden lg:block'>
-            <PageMenu />
-        </div>
-        <div className='lg:hidden block'>
-            <HeaderMobile />
-        </div>  
+      <div className="hidden lg:block">
+        <PageMenu />
+      </div>
+      <div className="lg:hidden block">
+        <HeaderMobile />
+      </div>
       <HeaderPage
         titlePage="Contacts"
         headerPageImage="/contact-us.png"

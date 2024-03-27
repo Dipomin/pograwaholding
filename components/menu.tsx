@@ -14,22 +14,37 @@ const Menu = () => {
       menuLink: "/",
     },
     {
-      menuId: 0,
+      menuId: 1,
       labelMenu: "À propos",
       menuLink: "/qui-sommes-nous/presentation",
     },
     {
-      menuId: 0,
+      menuId: 2,
       labelMenu: "Expertises",
       menuLink: "/expertises",
     },
     {
-      menuId: 0,
+      menuId: 3,
+      labelMenu: "Filiales",
+      menuLink: "/filiales",
+    },
+    {
+      menuId: 3,
+      labelMenu: "Partenaires",
+      menuLink: "#",
+    },
+    {
+      menuId: 4,
+      labelMenu: "Galerie",
+      menuLink: "#",
+    },
+    {
+      menuId: 5,
       labelMenu: "Blog",
       menuLink: "#",
     },
     {
-      menuId: 0,
+      menuId: 6,
       labelMenu: "Contacts",
       menuLink: "/contacts",
     },

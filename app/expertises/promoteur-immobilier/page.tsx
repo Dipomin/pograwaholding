@@ -4,6 +4,7 @@ import PageMenu from "@/components/page-menu";
 import React from "react";
 import Image from "next/image";
 import HeaderMobile from "@/components/HeaderMobile";
+import ListeVillas from "@/components/liste-villas";
 
 const PromoteurImmobilier = () => {
   return (
@@ -20,6 +21,11 @@ const PromoteurImmobilier = () => {
           headerPageImage="/promotion-immobiliere-VILLA-DUPLEX-NANCY-1.jpeg"
           titleDesc="POGRAWA HOLDING regroupant plusieurs  filiales dont AGINEC GROUPE SA promoteur immobilier AGREER par l’ETAT de Côte d’Ivoire, se distingue par son expertise dans le domaine de la construction et de la promotion immobilière depuis 20 ans"
         />
+      </div>
+      <div>
+        <div>
+          <ListeVillas />
+        </div>
       </div>
       <section className="lg:container p-4 my-10 lg:p-10 text-base lg:text-xl font-light lg:leading-10">
         <div className="p-2 lg:p-4">

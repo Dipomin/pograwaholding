@@ -27,6 +27,9 @@ const CiteAdo = () => {
             <div className="text-2xl pt-4 font-thin italic underline">
               Conditions : 50% à la souscription et le reste sur 24 mois
             </div>
+            <div className="text-2xl pt-4 font-thin italic underline">
+              Mode de paiement : cash tempérament credit bancaire
+            </div>
           </div>
         </div>
         <div className="container pb-20">

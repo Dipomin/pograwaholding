@@ -23,7 +23,9 @@ const BaieMilliadaire = () => {
             <div className=" text-orange-500 text-3xl font-extrabold">
               Prix : 20 000 000 F CFA
             </div>
-            <div className="text-2xl pt-4 font-thin italic underline"></div>
+            <div className="text-2xl pt-4 font-thin italic underline">
+              Mode de paiement : cash tempérament credit bancaire
+            </div>
           </div>
         </div>
         <div className="container pb-20">

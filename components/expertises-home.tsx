@@ -7,25 +7,25 @@ const expertises = [
   {
     id: "0",
     iconExpert: "/btp-icon.png",
-    expertiseTitle: "Promotion immobilière",
+    expertiseTitle: "AGINEC",
     descTitle:
       "Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner.",
-    btnLink: "/expertises/promoteur-immobilier"
+    btnLink: "/expertises/promoteur-immobilier",
   },
   {
-    id: "0",
+    id: "1",
     iconExpert: "/ascenseur-icon.png",
-    expertiseTitle: "Technologie",
+    expertiseTitle: "Sait-x",
     descTitle:
       "Bénéficiez de notre expertise pour une installation et une maintenance de qualité.",
-    btnLink: "/expertises/technologie"
+    btnLink: "https://www.sait-x.com",
   },
   {
-    id: "0",
+    id: "2",
     iconExpert: "/industry-icon.png",
-    expertiseTitle: "Industrie extractive",
+    expertiseTitle: "Bic Mining",
     descTitle: "Nous sommes engagés à minimiser notre impact environnemental.",
-    btnLink: "/expertises/industrie-extractive"
+    btnLink: "/expertises/industrie-extractive",
   },
 ];
 
@@ -41,7 +41,10 @@ const ExpertisesHome = () => {
         </div>
         <div className="grid grid-cols-1 lg:flex justify-center w-full bg-blue-900 space-y-8 lg:space-y-0  lg:my-0 lg:p-16">
           {expertises.map((expertise) => (
-            <div key={expertise.id} className="container flex flex-col w-96 pt-16 hover:bg-orange-400">
+            <div
+              key={expertise.id}
+              className="container flex flex-col w-96 pt-16 hover:bg-orange-400"
+            >
               <div className="uppercase text-center font-bold text-orange-400 hover:text-white text-2xl">
                 {expertise.expertiseTitle}
               </div>
@@ -58,7 +61,9 @@ const ExpertisesHome = () => {
               </div>
               <div className="flex justify-center p-6">
                 <Link href={expertise.btnLink}>
-                  <Button size={"lg"} variant={"orange"}>En savoir plus {"->"}</Button>
+                  <Button size={"lg"} variant={"orange"}>
+                    En savoir plus {"->"}
+                  </Button>
                 </Link>
               </div>
             </div>

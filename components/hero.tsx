@@ -41,12 +41,16 @@ const Hero = () => {
       pictLink: "/00.png",
     },
     {
-      idPict: 0,
+      idPict: 1,
       pictLink: "/01.png",
     },
     {
-      idPict: 0,
+      idPict: 2,
       pictLink: "/02.png",
+    },
+    {
+      idPict: 3,
+      pictLink: "/sait-x.png",
     },
   ];
 
@@ -64,15 +68,13 @@ const Hero = () => {
             {Array.from(carouselPicts).map((carousel) => (
               <CarouselItem key={carousel.idPict}>
                 <div className={josefin.className}>
-                
-                    <Image
-                      src={carousel.pictLink}
-                      width={1600}
-                      height={600}
-                      alt="Pograwa Holding"
-                      className=" items-stretch"
-                    />
-                  
+                  <Image
+                    src={carousel.pictLink}
+                    width={1600}
+                    height={600}
+                    alt="Pograwa Holding"
+                    className=" items-stretch"
+                  />
                 </div>
               </CarouselItem>
             ))}
