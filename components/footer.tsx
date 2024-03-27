@@ -9,9 +9,9 @@ import { Button } from "./ui/button";
 const Footer = () => {
   return (
     <section className="bg-gray-200/90">
-      <div className="container flex justify-center gap-6 pt-20">
+      <div className="container lg:flex justify-center gap-6 pt-20">
         <div className="text-4xl text-orange-400 font-bold">Newsletter</div>
-        <div className="flex w-full max-w-sm items-center space-x-2">
+        <div className="lg:flex w-full my-2 lg:max-w-sm items-center space-x-2">
           <Input type="email" placeholder="Votre adresse email" />
           <Button variant={"orange"} type="submit">
             Sinscrire
@@ -19,17 +19,17 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container flex justify-between gap-8 pt-16">
+      <div className="container grid grid-cols-1 lg:flex justify-between gap-8 pt-16">
         <div>
           <div className="uppercase font-bold text-xl pb-4">Expertises</div>
           <ul className="font-bold uppercase leading-10">
-            <Link href={"#"} className="hover:underline">
-              <li className="hover:text-orange-600">• Bureau de Travaux Public</li>
+            <Link href={"/expertises/promoteur-immobilier"} className="hover:underline">
+              <li className="hover:text-orange-600">• Promotion immobilière</li>
             </Link>
-            <Link href={"#"} className="hover:underline">
-              <li className="hover:text-orange-600">• Industrie minière</li>
+            <Link href={"/expertises/industrie-extractive"} className="hover:underline">
+              <li className="hover:text-orange-600">• Industrie extractive</li>
             </Link>
-            <Link href={"#"} className="hover:underline">
+            <Link href={"/expertises/technologie"} className="hover:underline">
               <li className="hover:text-orange-600">• Technologie</li>
             </Link>
           </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-96">
+        <div className="pb-10 lg:pb-0 lg:w-96">
           <div>
             <Image
               src={"/pograwa_holding.png"}

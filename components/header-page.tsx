@@ -13,12 +13,12 @@ const HeaderPage = ({
   titleDesc,
 }: titlePageProps) => {
   return (
-    <div className="flex w-full">
-      <div className="bg-blue-800 max-w-[50%]">
-        <div className="container p-4 text-4xl text-white font-bold text-center">
+    <div className="lg:flex w-full">
+      <div className="bg-blue-800 p-2 lg:max-w-[50%]">
+        <div className="container lg:p-4 text-2xl lg:text-4xl text-white font-bold text-center">
           {titlePage}
         </div>
-        <div className="text-xl text-white font-light container">
+        <div className="lg:container p-2 text-lg: lg:text-xl text-white font-thin lg:font-light">
           {titleDesc}
         </div>
       </div>

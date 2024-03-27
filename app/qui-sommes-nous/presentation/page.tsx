@@ -1,3 +1,4 @@
+import HeaderMobile from "@/components/HeaderMobile";
 import Footer from "@/components/footer";
 import HeaderPage from "@/components/header-page";
 import PageMenu from "@/components/page-menu";
