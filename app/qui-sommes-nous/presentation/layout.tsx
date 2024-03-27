@@ -1,7 +1,3 @@
-import Footer from "@/components/footer";
-import HeaderPage from "@/components/header-page";
-import Menu from "@/components/menu";
-import PageMenu from "@/components/page-menu";
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
@@ -13,8 +9,11 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Pograwa Holding • Présentation",
   description: "Société immobilière en Côte d'Ivoire",
+  openGraph: {
+    title: "Pograwa Holding",
+    description: "Pograwa Holding est une société immobilière en Côte d'Ivoire",
+  },
 };
-
 
 export default function AboutLayout({
   children,
@@ -23,12 +22,9 @@ export default function AboutLayout({
 }) {
   return (
     <html lang="fr">
-      
-        <body className={roboto.className}>
-            <main>
-                {children}
-            </main>
-        </body>
+      <body className={roboto.className}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

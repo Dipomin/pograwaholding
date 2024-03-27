@@ -12,8 +12,8 @@ const APropos = () => {
 
   return (
     <section className='bg-[url("/bg-mot.jpg")]'>
-      <div className="container pb-24">
-        <div>
+      <div className=" pb-24">
+        <div className="container">
           <h2 className=" text-4xl text-orange-500 text-center font-bold pt-8">
             À propos
           </h2>
@@ -21,7 +21,7 @@ const APropos = () => {
             Qui sommes-nous ?
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:flex justify-center gap-8">
+        <div className="grid grid-cols-1 lg:flex justify-center gap-8 pb-16">
           <div>
             <Image
               src={"/Moumouni-pograwa-PDG.jpg"}
@@ -52,8 +52,8 @@ const APropos = () => {
             </Button>
           </div>
         </div>
-        <div className="w-full container bg-orange-700 bg-opacity-95 shadow-md">
-          <div className="container grid place-items-center grid-cols-1 lg:flex justify-between gap-y-16 lg:my-0 pb-24 text-white p-10">
+        <div className="w-full bg-orange-700 bg-opacity-95 shadow-md">
+          <div className="container grid place-items-center grid-cols-1 lg:flex justify-between gap-y-16 lg:my-0 pb-10 text-white pt-10">
             <div className="flex">
               <div className="text-7xl font-bold text-border border-orange-400">
                 +<CountUp start={0} end={12} delay={5} />
