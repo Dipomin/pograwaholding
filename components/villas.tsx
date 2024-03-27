@@ -22,7 +22,7 @@ const Villas = () => {
         "1 Cuisine moderne, 1 Salle à manger, 2 Terrasses avant et arrière, 1 balcon, 1 garage",
       pict: "/villa-duplex-nancy.png",
       prix: "48.000.000 FCFA",
-      link: "/villa-duplex-moyen-standing-nancy",
+      link: "/expertises/promoteur-immobilier/cite-ivoire-duplex",
     },
     {
       id: 1,
@@ -47,17 +47,6 @@ const Villas = () => {
       autres: "1 Cuisine moderne, 1 Salle à manger",
       pict: "/villa-cite-ivoire.png",
       prix: "18.600.000 FCFA",
-      link: "/expertises/promoteur-immobilier/cite-ivoire/",
-    },
-    {
-      id: 3,
-      nomVilla: "Villa duplex • Cité Ivoire (4 pièces) à Songon",
-      chambres: "4 chambres autonomes (dressing + placard + douche wc)",
-      salleBain: "1 Salle de bain",
-      superficie: "200 m2",
-      autres: "1 Cuisine moderne, 1 Salle à manger,",
-      pict: "/villa-cite-ivoire.png",
-      prix: "24.600.000 FCFA",
       link: "/expertises/promoteur-immobilier/cite-ivoire/",
     },
     {
@@ -141,14 +130,9 @@ const Villas = () => {
                 <div className="text-3xl font-bold text-orange-300 pt-2">
                   {villa.prix}
                 </div>
-                <div className="">
-                  <Button
-                    variant={"outline"}
-                    onClick={() => route.push(villa.link)}
-                  >
-                    En savoir plus
-                  </Button>
-                </div>
+                <Link href={villa.link}>
+                  <Button variant={"outline"}>En savoir plus</Button>
+                </Link>
               </div>
             </div>
           </div>

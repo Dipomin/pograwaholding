@@ -13,6 +13,13 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Pograwa Holding",
   description: "L'immobilier c'est notre passion",
+  openGraph: {
+    title: "Pograwa Holding",
+    description:
+      "POGRAWA HOLDING est un groupe d'entreprises qui redéfinit les standards de l'immobilier, des mines, des nouvelles technologies et des énergies renouvelables",
+    images: "/pograwa_holding.png",
+    siteName: "Pograwa Holding",
+  },
 };
 
 export default function RootLayout({
