@@ -47,8 +47,14 @@ const Filiales = () => {
             </div>
           </div>
           <div className="text-2xl text-black lg:w-[400px]">
-            <div className="hover:opacity-5 hover:animate-pulse w-full overflow-hidden lg:h-80 tex-6xl font-bold">
-              BIC MINING
+            <div className="hover:opacity-5 hover:animate-pulse w-full overflow-hidden lg:h-80">
+              <Image
+                src={"/bic-mine-logo.png"}
+                width={400}
+                height={400}
+                alt="Promotion immobilière"
+                className="lg:w-full"
+              />
             </div>
           </div>
         </div>
