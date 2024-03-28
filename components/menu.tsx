@@ -31,7 +31,7 @@ const Menu = () => {
     {
       menuId: 3,
       labelMenu: "Partenaires",
-      menuLink: "#",
+      menuLink: "/partenaires",
     },
     {
       menuId: 4,
