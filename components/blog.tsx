@@ -9,22 +9,21 @@ const Blog = () => {
       idArticle: 0,
       articlePict: "/maison.jpg",
       blogTitle: "5 conseils pour acheter un bien immobilier en Côte d'Ivoire",
-      articleLink: "comment-acheter-un-bien-immolier-en-cote-ivoire",
+      articleLink: "#",
     },
     {
       idArticle: 1,
       articlePict: "/ascenseur.jpg",
       blogTitle:
         "Les ascenseurs : un élément essentiel pour la ville intelligente de demain",
-      articleLink: "comment-acheter-un-bien-immolier-en-cote-ivoire",
+      articleLink: "#",
     },
     {
       idArticle: 2,
       articlePict: "/minier.jpg",
       blogTitle:
         "Comment l'industrie minière peut contribuer au développement durable",
-      articleLink:
-        "comment-l-industrie-miniere-peut-contribuer-au-développement-durable",
+      articleLink: "#",
     },
   ];
 

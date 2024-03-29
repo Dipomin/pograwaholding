@@ -20,42 +20,38 @@ const Filiales = () => {
         <HeaderMobile />
       </div>
       <div className="container pt-10">
-        <div className="text-2xl lg:text-4xl font-bold uppercase text-center lg:p-14 pb-9 lg:pb-0">
+        <div className="text-2xl lg:text-4xl font-bold uppercase text-center pb-24 lg:p-14 lg:pb-0">
           Nos filiales
         </div>
-        <div className="lg:flex space-y-8 lg:gap-4 justify-center">
-          <div className="text-2xl text-black lg:w-[400px]">
-            <div className="hover:opacity-5 hover:animate-pulse w-full overflow-hidden lg:h-80">
-              <Image
-                src={"/aginec.png"}
-                width={300}
-                height={250}
-                alt="Promotion immobilière"
-                className="flex"
-              />
-            </div>
+        <div className="lg:flex space-y-8 lg:gap-16 justify-center">
+          <div>
+            <Image
+              src={"/aginec.png"}
+              width={200}
+              height={200}
+              alt="Promotion immobilière"
+              className="flex"
+            />
           </div>
-          <div className="text-2xl text-black lg:w-[400px]">
-            <div className="hover:opacity-5 hover:animate-pulse w-full overflow-hidden lg:h-80">
-              <Image
-                src={"/sait-x-logo.png"}
-                width={400}
-                height={400}
-                alt="Promotion immobilière"
-                className="lg:w-full"
-              />
-            </div>
+
+          <div>
+            <Image
+              src={"/sait-x-logo.png"}
+              width={200}
+              height={200}
+              alt="Promotion immobilière"
+              className=""
+            />
           </div>
-          <div className="text-2xl text-black lg:w-[400px]">
-            <div className="hover:opacity-5 hover:animate-pulse w-full overflow-hidden lg:h-80">
-              <Image
-                src={"/bic-mine-logo.png"}
-                width={400}
-                height={400}
-                alt="Promotion immobilière"
-                className="lg:w-full"
-              />
-            </div>
+
+          <div>
+            <Image
+              src={"/bic-mine-logo.png"}
+              width={200}
+              height={200}
+              alt="Promotion immobilière"
+              className=""
+            />
           </div>
         </div>
       </div>

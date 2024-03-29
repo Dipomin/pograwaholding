@@ -23,13 +23,19 @@ const Footer = () => {
         <div>
           <div className="uppercase font-bold text-xl pb-4">Expertises</div>
           <ul className="font-bold uppercase leading-10">
-            <Link href={"/expertises/promoteur-immobilier"} className="hover:underline">
+            <Link
+              href={"/expertises/promoteur-immobilier"}
+              className="hover:underline"
+            >
               <li className="hover:text-orange-600">• Promotion immobilière</li>
             </Link>
-            <Link href={"/expertises/industrie-extractive"} className="hover:underline">
+            <Link
+              href={"/expertises/industrie-extractive"}
+              className="hover:underline"
+            >
               <li className="hover:text-orange-600">• Industrie extractive</li>
             </Link>
-            <Link href={"/expertises/technologie"} className="hover:underline">
+            <Link href={"https://www.sait-x.com"} className="hover:underline">
               <li className="hover:text-orange-600">• Technologie</li>
             </Link>
           </ul>

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -5,6 +7,7 @@ import { BiMap } from "react-icons/bi";
 import { MdPhoneInTalk } from "react-icons/md";
 import { Button } from "./ui/button";
 import { BsHouse } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 const Menu = () => {
   const mainMenu = [
@@ -50,6 +53,8 @@ const Menu = () => {
     },
   ];
 
+  const router = useRouter();
+
   return (
     <div className="hidden lg:block lg:w-full">
       <div className="grid place-items-center grid-cols-1 p-8 rounded-lg top-0">
@@ -64,7 +69,11 @@ const Menu = () => {
             ))}
           </div>
           <div className="my-6">
-            <Button variant={"outline"} className="uppercase font-semibold">
+            <Button
+              onClick={() => router.push("/reservation")}
+              variant={"outline"}
+              className="uppercase font-semibold"
+            >
               {" "}
               <BsHouse size={20} /> Réserver maintenant
             </Button>

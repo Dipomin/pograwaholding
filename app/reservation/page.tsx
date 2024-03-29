@@ -27,8 +27,11 @@ type Inputs = {
   nom: string;
   prenoms: string;
   email: string;
+  logement: string;
+  site: string;
   telephone: number;
-  message: string;
+  budget: string;
+  paiement: string;
 };
 
 type Props = {};
@@ -52,12 +55,12 @@ const formSchema = z.object({
   telephone: z.number().min(8, {
     message: "Le champ doit contenir un numéro de téléphone valide.",
   }),
-  message: z.string().min(6, {
-    message: "Vous devez saisir un message",
+  budget: z.number().min(4, {
+    message: "Vous devez saisir un montant",
   }),
 });
 
-const Contacts = ({}: Props) => {
+const Reservation = ({}: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
 
   //console.log(formSchema);
@@ -126,7 +129,7 @@ const Contacts = ({}: Props) => {
         titleDesc="N'hésitez pas à nous contacter pour toutes informations complémentaires."
       />
       <div className="container lg:p-5 text-center text-xl">
-        Veuillez remplir le formulaire ci-dessous :
+        Veuillez remplir le formulaire ci-dessous pour réservation votre villa :
       </div>
       <div className="lg:container p-3 lg:pt-10">
         <form
@@ -164,14 +167,33 @@ const Contacts = ({}: Props) => {
             {...register("email")}
             placeholder="vous@email.com"
           />
-
-          <textarea
-            cols={10}
-            rows={10}
-            className="contactInput mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-900 focus:ring-blue-500 block w-full  rounded-md sm:text-sm focus:ring-1 placeholder:text-base"
+          <input
+            type="text"
+            className="contactInput mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-900 focus:ring-blue-500 block w-full h-10 rounded-md sm:text-sm focus:ring-1 placeholder:text-base"
             required
-            {...register("message")}
-            placeholder="Saisissez votre message ici"
+            {...register("logement")}
+            placeholder="Type de logement"
+          />
+          <input
+            type="text"
+            className="contactInput mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-900 focus:ring-blue-500 block w-full h-10 rounded-md sm:text-sm focus:ring-1 placeholder:text-base"
+            required
+            {...register("site")}
+            placeholder="Site"
+          />
+          <input
+            type="budget"
+            className="contactInput mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-900 focus:ring-blue-500 block w-full h-10 rounded-md sm:text-sm focus:ring-1 placeholder:text-base"
+            required
+            {...register("budget")}
+            placeholder="Votre budget"
+          />
+          <input
+            type="text"
+            className="contactInput mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-900 focus:ring-blue-500 block w-full h-10 rounded-md sm:text-sm focus:ring-1 placeholder:text-base"
+            required
+            {...register("paiement")}
+            placeholder="Mode de paiement"
           />
 
           <button className="text-white bg-[#f17c28] border-2 border-cyan-500-300 font-bold rounded-lg text-sm  pr-5 pl-5 pt-3 pb-3 hover:bg-blue-800">
@@ -185,4 +207,4 @@ const Contacts = ({}: Props) => {
   );
 };
 
-export default Contacts;
+export default Reservation;
