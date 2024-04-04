@@ -1,10 +1,12 @@
+"use client";
+
 import HeaderMobile from "@/components/HeaderMobile";
 import Footer from "@/components/footer";
 import HeaderPage from "@/components/header-page";
 import PageMenu from "@/components/page-menu";
 import React from "react";
 
-const IndustrieExtractive = () => {
+export default function IndustriExtractive() {
   return (
     <div>
       <div className="hidden lg:block">
@@ -102,6 +104,4 @@ const IndustrieExtractive = () => {
       <Footer />
     </div>
   );
-};
-
-export default IndustrieExtractive;
+}

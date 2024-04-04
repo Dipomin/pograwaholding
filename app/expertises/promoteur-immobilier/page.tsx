@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/footer";
 import HeaderPage from "@/components/header-page";
 import PageMenu from "@/components/page-menu";

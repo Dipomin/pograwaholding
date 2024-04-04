@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/footer";
 import PageMenu from "@/components/page-menu";
 import React from "react";
@@ -5,7 +7,7 @@ import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineHome } from "react-icons/md";
 
-const CiteAdo = () => {
+export default function CiteAdo() {
   return (
     <div>
       <PageMenu />
@@ -88,6 +90,4 @@ const CiteAdo = () => {
       <Footer />
     </div>
   );
-};
-
-export default CiteAdo;
+}

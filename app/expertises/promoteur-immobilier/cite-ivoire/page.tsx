@@ -1,3 +1,5 @@
+"use client";
+
 import PageMenu from "@/components/page-menu";
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";

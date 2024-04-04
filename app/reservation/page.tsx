@@ -60,14 +60,14 @@ const formSchema = z.object({
   }),
 });
 
-const Reservation = ({}: Props) => {
+export default function Reservation({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   //console.log(formSchema);
 
   const onSubmit: SubmitHandler<Inputs> = async (formData) => {
     try {
-      const response = await fetch("/api/submitForm", {
+      const response = await fetch("/api/send/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,12 +124,12 @@ const Reservation = ({}: Props) => {
         <HeaderMobile />
       </div>
       <HeaderPage
-        titlePage="Contacts"
-        headerPageImage="/contact-us.png"
-        titleDesc="N'hésitez pas à nous contacter pour toutes informations complémentaires."
+        titlePage="Réserver une villa"
+        headerPageImage="/reserver.png"
+        titleDesc="Réservez votre villa dès maintenant , un conseil client vous contactera dans les plus brefs délais."
       />
       <div className="container lg:p-5 text-center text-xl">
-        Veuillez remplir le formulaire ci-dessous pour réservation votre villa :
+        Veuillez remplir le formulaire ci-dessous pour réserver votre villa :
       </div>
       <div className="lg:container p-3 lg:pt-10">
         <form
@@ -205,6 +205,4 @@ const Reservation = ({}: Props) => {
       <Footer />
     </div>
   );
-};
-
-export default Reservation;
+}
