@@ -23,34 +23,43 @@ const Filiales = () => {
         <div className="text-2xl lg:text-4xl font-bold uppercase text-center pb-24 lg:p-14 lg:pb-0">
           Nos filiales
         </div>
-        <div className="lg:flex space-y-8 lg:gap-16 justify-center">
-          <div>
+        <div className="lg:flex lg:gap-16 justify-center pt-16">
+          <div
+            onClick={() => router.push("/expertises/promoteur-immobilier")}
+            className="hover:cursor-pointer hover:opacity-50 hover:animate-out"
+          >
             <Image
               src={"/aginec.png"}
               width={200}
               height={200}
               alt="Promotion immobilière"
-              className="flex"
+              className="flex w-32"
             />
           </div>
 
-          <div>
+          <div
+            onClick={() => router.push("https://www.sait-x.com")}
+            className="hover:cursor-pointer hover:opacity-50 hover:animate-out"
+          >
             <Image
               src={"/sait-x-logo.png"}
               width={200}
               height={200}
               alt="Promotion immobilière"
-              className=""
+              className="w-64"
             />
           </div>
 
-          <div>
+          <div
+            onClick={() => router.push("/expertises/industrie-extractive")}
+            className="hover:cursor-pointer hover:opacity-50 hover:animate-out"
+          >
             <Image
               src={"/bic-mine-logo.png"}
               width={200}
               height={200}
               alt="Promotion immobilière"
-              className=""
+              className="w-32"
             />
           </div>
         </div>
