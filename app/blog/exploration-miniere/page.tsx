@@ -15,14 +15,13 @@ const ExplorationMiniere = () => {
       <div className="block lg:hidden">
         <MobileMenu />
       </div>
-
       <div>
-        <div className="bg-[url('/minier_h.png')] w-full h-60">
+        <div className="bg-[url('/minier_h.png')] w-full h-81">
           <h2 className="lg:text-4xl text-3xl font-bold space-y-10 text-white p-5">
             Pograwa Holding : Votre Partenaire de Confiance dans l'Exploration
             Minière
           </h2>
-          <div className="flex text-lg font-thin space-y-10 text-white p-5">
+          <div className="flex lg:text-lg text-base font-thin space-y-10 text-white p-5">
             Dans le monde de l'industrie minière, la réussite dépend souvent de
             la capacité à trouver les bonnes ressources au bon endroit, et au
             bon moment. C'est là que Pograwa Holding se distingue en tant que

@@ -42,7 +42,7 @@ const HeaderMobile = () => {
     {
       menuId: 5,
       labelMenu: "Blog",
-      menuLink: "#",
+      menuLink: "/blog",
     },
     {
       menuId: 6,

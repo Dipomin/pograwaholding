@@ -42,7 +42,7 @@ const PageMenu = () => {
     {
       menuId: 5,
       labelMenu: "Blog",
-      menuLink: "#",
+      menuLink: "/blog",
     },
     {
       menuId: 6,
@@ -61,7 +61,7 @@ const PageMenu = () => {
             {mainMenu.map((menu) => (
               <div key={menu.menuId}>
                 <Link href={menu.menuLink}>
-                  <div className="hover:bg-[#0d318d] hover:p-4 p-4 hover:animate-accordion-down">
+                  <div className="hover:p-4 p-4 hover:underline">
                     {menu.labelMenu}
                   </div>
                 </Link>
