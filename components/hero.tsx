@@ -38,19 +38,15 @@ const Hero = () => {
   const carouselPicts = [
     {
       idPict: 0,
-      pictLink: "/00.png",
+      pictLink: "/filiale_aginec.png",
     },
     {
       idPict: 1,
-      pictLink: "/01.png",
+      pictLink: "/filiale_bic.png",
     },
     {
       idPict: 2,
-      pictLink: "/02.png",
-    },
-    {
-      idPict: 3,
-      pictLink: "/sait-x.png",
+      pictLink: "/filiale_saitx.png",
     },
   ];
 
@@ -73,7 +69,7 @@ const Hero = () => {
                     width={1600}
                     height={600}
                     alt="Pograwa Holding"
-                    className=" items-stretch"
+                    className="items-stretch"
                   />
                 </div>
               </CarouselItem>

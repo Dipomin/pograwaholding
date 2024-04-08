@@ -79,9 +79,11 @@ const Villas = () => {
             <div>
               <FaLinkedin size={24} color="white" />
             </div>
-            <div>
-              <FaXTwitter size={24} color="white" />
-            </div>
+            <Link href={"https://twitter.com/PograwaH"}>
+              <div>
+                <FaXTwitter size={24} color="white" />
+              </div>
+            </Link>
             <div>
               <FaSquareInstagram size={24} color="white" />
             </div>
