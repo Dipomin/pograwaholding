@@ -2,13 +2,19 @@
 
 import Footer from "@/components/footer";
 import HeaderPage from "@/components/header-page";
+import HeaderMobile from "@/components/HeaderMobile";
 import PageMenu from "@/components/page-menu";
 import React from "react";
 
 const Presentation = () => {
   return (
     <div>
-      <PageMenu />
+      <div className="hidden lg:block">
+        <PageMenu />
+      </div>
+      <div className="lg:hidden block">
+        <HeaderMobile />
+      </div>
       <div>
         <HeaderPage
           titlePage="Présentation de Prograwa Holding"
@@ -16,7 +22,7 @@ const Presentation = () => {
           titleDesc="La satisfaction de nos clients est notre priorité, et nous nous engageons à dépasser vos attentes à chaque étape de votre parcours avec POGRAWA HOLDING."
         />
       </div>
-      <section className="container p-10 text-xl font-light leading-10">
+      <section className="lg:container  text-xl font-light lg:leading-10">
         <div className="p-4">
           Dans l'objectif d'efficacité et de compétitivité, toute entreprise
           fait face à de nombreux défis à relever pour la satisfaction de sa

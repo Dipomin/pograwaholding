@@ -67,7 +67,7 @@ const MobileMenu = () => {
 
   return (
     <div className="w-full grid grid-cols-1">
-      <div>
+      <div className=" overflow-y-scroll">
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline">

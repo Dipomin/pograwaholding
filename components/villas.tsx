@@ -71,7 +71,7 @@ const Villas = () => {
           </div>
 
           <div className="flex justify-center gap-3 pt-8 ">
-            <Link href={"facebook.com"}>
+            <Link href={"https://web.facebook.com/pograwaholdingsa"}>
               <div className="hover:to-blue-600">
                 <FaFacebookSquare size={24} color="white" />
               </div>
@@ -87,7 +87,7 @@ const Villas = () => {
             </div>
           </div>
 
-          <div className="flex justify-center p-16">
+          <div className="flex justify-center my-5 lg:p-16">
             <video
               src="/pograwa-holding.mp4"
               width={720}
@@ -125,14 +125,16 @@ const Villas = () => {
                 {villa.nomVilla}
               </div>
               <div className="font-thin">{villa.autres}</div>
-              <div className="font-bold">{villa.superficie}</div>
-              <div className="flex lg:justify-between">
-                <div className="text-3xl font-bold text-orange-300 pt-2">
+              <div className="font-bold text-2xl">{villa.superficie}</div>
+              <div className="lg:flex lg:justify-between">
+                <div className="lg:text-3xl text-2xl font-bold text-orange-300 pt-2">
                   {villa.prix}
                 </div>
-                <Link href={villa.link}>
-                  <Button variant={"outline"}>En savoir plus</Button>
-                </Link>
+                <div className="my-3">
+                  <Link href={villa.link}>
+                    <Button variant={"outline"}>En savoir +</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

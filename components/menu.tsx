@@ -62,7 +62,7 @@ const Menu = () => {
           <div className="flex my-3">
             {mainMenu.map((menu) => (
               <Link key={menu.menuId} href={menu.menuLink}>
-                <div className="hover:bg-[#0d318d] hover:p-4 p-4 hover:animate-accordion-down">
+                <div className="hover:p-4 p-4 hover:underline">
                   {menu.labelMenu}
                 </div>
               </Link>
@@ -74,8 +74,7 @@ const Menu = () => {
               variant={"outline"}
               className="uppercase font-semibold"
             >
-              {" "}
-              <BsHouse size={20} /> Réserver maintenant
+              Réserver maintenant
             </Button>
           </div>
         </div>

@@ -32,7 +32,7 @@ const APropos = () => {
             />
           </div>
           <div className="lg:w-[700px]">
-            <div className="text-xl lg:text-2xl text-justify font-thin pb-8 lg:leading-10">
+            <div className="container text-xl lg:text-2xl text-justify font-thin pb-8 lg:leading-10 truncate-7">
               Dans l'objectif d'efficacité et de compétitivité, toute entreprise
               fait face à de nombreux défis à relever pour la satisfaction de sa
               clientèle et surtout faire partir des compagnies qui comptent dans
@@ -43,13 +43,15 @@ const APropos = () => {
               l'immobilier, des nouvelles technologies, des mines et des
               énergies renouvelables sont nos domaines de compétences.
             </div>
-            <Button
-              variant={"orange"}
-              size={"lg"}
-              onClick={() => route.push("/qui-sommes-nous/presentation")}
-            >
-              Lire la suite
-            </Button>
+            <div className="flex justify-center">
+              <Button
+                variant={"orange"}
+                size={"lg"}
+                onClick={() => route.push("/qui-sommes-nous/presentation")}
+              >
+                Lire la suite
+              </Button>
+            </div>
           </div>
         </div>
         <div className="w-full bg-orange-700 bg-opacity-95 shadow-md">

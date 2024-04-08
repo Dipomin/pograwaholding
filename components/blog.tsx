@@ -8,22 +8,23 @@ const Blog = () => {
     {
       idArticle: 0,
       articlePict: "/maison.jpg",
-      blogTitle: "5 conseils pour acheter un bien immobilier en Côte d'Ivoire",
-      articleLink: "#",
+      blogTitle:
+        "Pograwa Holding : Réalisez Vos Rêves Immobiliers avec Confiance",
+      articleLink: "/blog/votre-reve-immobilier",
     },
     {
       idArticle: 1,
       articlePict: "/ascenseur.jpg",
       blogTitle:
-        "Les ascenseurs : un élément essentiel pour la ville intelligente de demain",
-      articleLink: "#",
+        "SAIT-TECHNOLOGIES : Votre Partenaire Ascensionnel vers l'Excellence Architecturale",
+      articleLink: "/blog/ascenseur-saitx-technologies",
     },
     {
       idArticle: 2,
       articlePict: "/minier.jpg",
       blogTitle:
-        "Comment l'industrie minière peut contribuer au développement durable",
-      articleLink: "#",
+        "Pograwa Holding : Votre Partenaire de Confiance dans l'Exploration Minière",
+      articleLink: "/blog/exploration-miniere",
     },
   ];
 

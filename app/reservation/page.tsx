@@ -66,8 +66,10 @@ export default function Reservation({}: Props) {
   //console.log(formSchema);
 
   const onSubmit: SubmitHandler<Inputs> = async (formData) => {
+    console.log(formData);
+
     try {
-      const response = await fetch("/api/send/", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -93,6 +95,9 @@ export default function Reservation({}: Props) {
       description: "Votre message a été envoyé avec succès.",
     });
   };
+
+  console.log(onSubmit);
+
   /**   function onSubmit(formData) {
     console.log(data);
 

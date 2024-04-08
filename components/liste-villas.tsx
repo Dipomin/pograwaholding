@@ -3,8 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 
@@ -82,14 +80,16 @@ const ListeVillas = () => {
                 {villa.nomVilla}
               </div>
               <div className="font-thin">{villa.autres}</div>
-              <div className="font-bold">{villa.superficie}</div>
-              <div className="flex lg:justify-between">
-                <div className="text-3xl font-bold text-orange-300 pt-2">
+              <div className="text-2xl font-bold my-3">{villa.superficie}</div>
+              <div className="lg:flex lg:justify-between">
+                <div className="lg:text-3xl text-2xl font-bold text-orange-300 pt-2">
                   {villa.prix}
                 </div>
-                <Link href={villa.link}>
-                  <Button variant={"outline"}>En savoir plus</Button>
-                </Link>
+                <div className="my-3">
+                  <Link href={villa.link}>
+                    <Button variant={"outline"}>En savoir +</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

@@ -17,11 +17,11 @@ const PromoteurImmobilier = () => {
       <div className="lg:hidden block">
         <HeaderMobile />
       </div>
-      <div>
+      <div className="w-full">
         <HeaderPage
           titlePage="Promotion Immobilière"
           headerPageImage="/promotion-immobiliere-VILLA-DUPLEX-NANCY-1.jpeg"
-          titleDesc="POGRAWA HOLDING regroupant plusieurs  filiales dont AGINEC GROUPE SA promoteur immobilier AGREER par l’ETAT de Côte d’Ivoire, se distingue par son expertise dans le domaine de la construction et de la promotion immobilière depuis 20 ans"
+          titleDesc="POGRAWA HOLDING regroupant plusieurs  filiales dont AGINEC GROUPE SA promoteur immobilier AGREER par l’ETAT de Côte d’Ivoire, se distingue par son expertise dans le domaine de la construction et de la promotion immobilière depuis 20 ans"
         />
       </div>
       <div>

@@ -74,8 +74,7 @@ const PageMenu = () => {
               variant={"outline"}
               className="uppercase font-semibold"
             >
-              {" "}
-              <BsHouse size={20} /> Réserver maintenant
+              <div>Réserver maintenant</div>
             </Button>
           </div>
         </div>

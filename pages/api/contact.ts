@@ -1,19 +1,12 @@
+// pages/api/contact.js
 import nodemailer from 'nodemailer';
-import express, {Request, Response} from 'express';
-import bodyParser from 'body-parser';
 
-const app = express();
-app.use(bodyParser.json());
-
- async function Handler(req:Request, res:Response) {
-
+export default async function handler(req:any, res:any) {
+  if (req.method === 'POST') {
     try {
-      const formData = await req.body;
-  
-      if (!formData) {
-        throw new Error('Le formulaire est vide')
-      }
-        const transporter = nodemailer.createTransport({
+      const formData = req.body;
+
+      const transporter = nodemailer.createTransport({
         host: 'vps41527.lws-hosting.com',
         port: 465,
         secure: true,
@@ -27,10 +20,9 @@ app.use(bodyParser.json());
         from: 'info@pograwaholding.com',
         to: 'kd_landry@yahoo.fr',
         subject: `Nouvelle réservation de villa`,
-        text: `Bonjour, ${formData.nom} a soumis un nouveau formulaire avec les détails suivants:\n\nNom: ${formData.nom}\nPrénoms: ${formData.prenoms}\nTéléphone: ${formData.telephone}\nEntreprise: ${formData.budget}\nE-mail: ${formData.email}\nPack: ${formData.paiement}\nBeneficaire: ${formData.logement}\nDuree: ${formData.site}\nContenu: ${formData.paiement}\n}`,
+        text: `Bonjour, ${formData.nom} a soumis un nouveau formulaire avec les détails suivants:\n\nNom: ${formData.nom}\nPrénoms: ${formData.prenoms}\nTéléphone: ${formData.telephone}\nBudget: ${formData.budget}\nE-mail: ${formData.email}\nPaiement: ${formData.paiement}\nLogement: ${formData.logement}\nSite: ${formData.site}\n}`,
       };
 
-      // Envoyer l'e-mail
       const info = await transporter.sendMail(mailOptions);
 
       console.log('Message envoyé: %s', info.messageId);
@@ -40,5 +32,8 @@ app.use(bodyParser.json());
       console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
       return res.status(500).json({ success: false, error: 'Erreur lors de l\'envoi de l\'e-mail' });
     }
-  
+  } else {
+    res.setHeader('Allow', ['POST']);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
 }
