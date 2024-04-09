@@ -91,7 +91,7 @@ const Villas = () => {
 
           <div className="flex justify-center my-5 lg:p-16">
             <video
-              src="/pograwa-holding.mp4"
+              src="/spot_pograwa_holding.mp4"
               width={720}
               height={640}
               controls
