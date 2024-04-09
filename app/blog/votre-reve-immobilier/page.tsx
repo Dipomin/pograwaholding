@@ -17,7 +17,7 @@ const ReveImmobilier = () => {
       </div>
 
       <div>
-        <div className="bg-[url('/immobilier_h.png')] w-full h-60">
+        <div className="bg-[url('/immobilier_h.png')] w-full h-81">
           <h2 className="lg:text-4xl text-3xl font-bold space-y-10 text-white p-5">
             Pograwa Holding : Réalisez Vos Rêves Immobiliers avec Confiance
           </h2>

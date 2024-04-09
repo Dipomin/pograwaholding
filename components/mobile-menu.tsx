@@ -49,7 +49,7 @@ const MobileMenu = () => {
     {
       menuId: 4,
       labelMenu: "Galerie",
-      menuLink: "#",
+      menuLink: "/galerie",
     },
     {
       menuId: 5,
