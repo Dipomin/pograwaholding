@@ -7,6 +7,7 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import OffresAvril from "./offres-avril";
 
 const Villas = () => {
   const route = useRouter();
@@ -89,18 +90,11 @@ const Villas = () => {
             </div>
           </div>
 
-          <div className="flex justify-center my-5 lg:p-16">
-            <video
-              src="/spot_pograwa_holding.mp4"
-              width={720}
-              height={640}
-              controls
-              autoPlay
-              muted
-            ></video>
+          <div className="my-5 lg:p-8">
+            <OffresAvril />
           </div>
         </div>
-        <div className="text-3xl lg:text-5xl font-normal text-center uppercase lg:text-white pt-8 lg:pt-20 text-blue-900">
+        <div className="text-3xl lg:text-5xl font-normal text-center uppercase lg:text-white pt-8 lg:pt-4 text-blue-900">
           Découvrez nos projets immobiliers
         </div>
         <div className="text-xl lg:text-3xl font-thin text-center text-white pt-10">
