@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Menu from "@/components/menu";
-import Footer from "@/components/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "@/components/ui/toaster";
 
 const roboto = Roboto({
@@ -66,6 +65,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <GoogleAnalytics gaId="AW-16547582054" />
       <body className={roboto.className}>
         <main>{children}</main>
         <Toaster />
